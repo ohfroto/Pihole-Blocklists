@@ -54,6 +54,10 @@
 @@||impactradius-event.com^
 @@||shareasale.com^
 @@||partnerize.com^
+! prf.hn is Partnerize's own click-tracking shortlink domain -- a separate domain entirely from
+! partnerize.com, not a subdomain of it. Found live: this is what Quidco actually redirects
+! through for at least one retailer ("prf.hn refused to connect").
+@@||prf.hn^
 
 ! --- Client-side testing tools ---
 @@||connect.facebook.net^
