@@ -9,8 +9,12 @@
 ! Compiled: 2026-10-19
 
 ! --- Google (Analytics / Tag Manager -- also covers Search Console's tag-based site verification) ---
+! analytics.google.com (the GA web UI/reporting login) is a different domain from
+! google-analytics.com (the tracking endpoint embedded on websites) -- both needed separately,
+! confirmed live after the first version of this file still left the GA web UI blocked.
 @@||google-analytics.com^
 @@||googletagmanager.com^
+@@||analytics.google.com^
 
 ! --- Microsoft Teams ---
 @@||teams.microsoft.com^
