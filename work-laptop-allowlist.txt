@@ -58,3 +58,11 @@
 ! --- Client-side testing tools ---
 @@||connect.facebook.net^
 @@||clarity.ms^
+
+! --- Personal cashback ---
+! Confirmed quidco.com itself isn't currently blocked by any subscribed list; this is a
+! precautionary add, not a fix for an active block. Its actual click-tracking/redirect domain
+! couldn't be verified (no live affiliate link to trace, support docs don't name it) -- a lot of
+! Quidco's tracking likely already passes through the affiliate-network entries above, since it
+! aggregates retailer deals through those same networks.
+@@||quidco.com^
