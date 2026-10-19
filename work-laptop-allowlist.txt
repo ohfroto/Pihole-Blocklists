@@ -1,0 +1,56 @@
+! Title: Work laptop allowlist
+! Purpose: exceptions on top of normal blocking for one device (a work laptop), subscribed in
+!   Pi-hole as an "Allow" type list scoped to a single group so it has no effect on any other
+!   device on the network -- that scoping lives in Pi-hole's own group/client config, not here.
+! Format note: unlike a block-type list, Pi-hole only recognises the ABP *exception* syntax
+!   (`@@||domain^`) for allow-type lists -- plain `||domain^` lines are silently ignored, and a
+!   bare domain with no `@@||...^` wrapper only matches that exact host, not its subdomains.
+!   Confirmed empirically against this Pi-hole instance before writing this file.
+! Compiled: 2026-10-19
+
+! --- Google (Analytics / Tag Manager -- also covers Search Console's tag-based site verification) ---
+@@||google-analytics.com^
+@@||googletagmanager.com^
+
+! --- Microsoft Teams ---
+@@||teams.microsoft.com^
+@@||teams.cloud.microsoft^
+@@||skype.com^
+@@||lync.com^
+
+! --- Slack ---
+@@||slack.com^
+@@||slack-edge.com^
+@@||slack-msgs.com^
+@@||slack-imgs.com^
+@@||slack-files.com^
+
+! --- Time Doctor ---
+@@||timedoctor.com^
+@@||ingest.sentry.io^
+
+! --- Joplin sync (OneDrive) ---
+@@||onedrive.live.com^
+@@||sharepoint.com^
+@@||sharepointonline.com^
+@@||login.microsoftonline.com^
+@@||login.live.com^
+@@||graph.microsoft.com^
+@@||account.live.com^
+
+! --- Affiliate networks (retained for testing) ---
+@@||awin.com^
+@@||awin1.com^
+@@||cj.com^
+@@||anrdoezrs.net^
+@@||dpbolvw.net^
+@@||qksrv.net^
+@@||linksynergy.com^
+@@||impact.com^
+@@||impactradius-event.com^
+@@||shareasale.com^
+@@||partnerize.com^
+
+! --- Client-side testing tools ---
+@@||connect.facebook.net^
+@@||clarity.ms^
