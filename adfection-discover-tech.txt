@@ -1,0 +1,48 @@
+! Title: AdFection / Discover-Tech (Candiru spyware delivery via targeted ads)
+! Source: Citizen Lab, "Exposing AdFection: How Discover-Tech Turned Targeted Ads Into a
+!   Pipeline for Zero-Click Mercenary Spyware", published 2026-10-15.
+!   https://citizenlab.ca/research/how-discover-tech-turned-targeted-ads-into-a-pipeline-for-spyware/
+! Compiled: 2026-10-19
+! Maintained manually -- not an auto-updating feed. Re-check the report (or any Citizen Lab
+!   follow-up) periodically; it is not expected to change on its own.
+!
+! What this covers: Discover-Tech operates "Controlium", a real-time ad-bidding platform that
+! Citizen Lab found has been used to deliver Candiru's zero-click mercenary spyware -- no click
+! on the ad required, simply loading it can be enough. Most of Section A below was already
+! independently covered by the Hagezi multi.txt list (checked 2026-10-19); kept here anyway so
+! this list stands as a complete, self-contained record of this specific incident regardless of
+! what other lists currently include. Section B (Candiru's own spyware infrastructure, as
+! opposed to Discover-Tech's ad platform) is explicitly NOT exhaustive -- the report states
+! Fingerprint V1 alone identified ~305 validator domains, of which only a handful are named in
+! the report's text; what's below is only those named examples.
+
+! --- Section A: Discover-Tech / Controlium ad-platform domains (report's Appendix C) ---
+||discover-tech.io^
+||mtrtb.com^
+||mydsp.io^
+||controlium.net^
+||powerium.net^
+||platc-tester.com^
+||myweb3id.io^
+||myipinfo.io^
+||akedo.gg^
+||volasim.com^
+||tracookiepixel.xyz^
+||cookiesurfer.com^
+||cookie-sync.xyz^
+||ads-monitor.xyz^
+||checkmyimp.com^
+||ads-impressions.com^
+||nutralove.co^
+
+! --- Section B: Candiru spyware infrastructure named in the report (NOT exhaustive -- see note above) ---
+||keyadapter.com^
+||sharethere.net^
+||fearevolve.com^
+||jobmarcher.com^
+||insightenterprisells.com^
+||plasticbells.com^
+||outdooutcome.com^
+||suggestutterly.com^
+||sincereaccertain.com^
+||d1fcoizt7mje85.cloudfront.net^
